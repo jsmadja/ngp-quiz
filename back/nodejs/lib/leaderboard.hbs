@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+              integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+              crossorigin="anonymous">
+    </head>
+    <body style="background: #212529">
+        <table class="table table-inverse table-striped table-hover">
+            <thead>
+                <th></th>
+                <th>Player</th>
+                <th style="text-align: right;">Score</th>
+                <th style="text-align: right;">Time</th>
+                <th style="text-align: right;">Accuracy</th>
+                <th></th>
+            </thead>
+            <tbody>
+                {{#each .}}
+                    <tr>
+                        <th style="text-align: right;">{{formatRank @index}}</th>
+                        <td>{{player}}</td>
+                        <td style="text-align: right;">{{formatNumber score}}</td>
+                        <td style="text-align: right;">{{time elapsed_time}}</td>
+                        <td style="text-align: right;">{{{accuracy detail.accuracy}}}</td>
+                        <td style="text-align: center;">{{formatDate created_at}}</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </body>
+</html>

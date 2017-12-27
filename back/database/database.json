@@ -1,0 +1,21 @@
+{
+    "dev": {
+        "driver": "mysql",
+        "user": "whois",
+        "password": "whois",
+        "host": "localhost",
+        "database": "whois",
+        "port": "3306",
+        "multipleStatements": true
+    },
+    "container": {
+        "driver": "mysql",
+        "user": "whois",
+        "password": "whois",
+        "host": "db",
+        "database": "whois",
+        "multipleStatements": true
+    },
+    
+    "sql-file": true
+}

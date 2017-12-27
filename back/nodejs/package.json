@@ -1,0 +1,36 @@
+{
+  "name": "xwhois",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "ava test",
+    "test:watch": "ava test --watch",
+    "db:reset": "db-migrate reset --config ../database/database.json --migrations-dir ../database/migrations && db-migrate up --config ../database/database.json --migrations-dir ../database/migrations"
+  },
+  "author": "Julien Smadja <julien.smadja@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "nodemon": "^1.12.0",
+    "npm-check": "5.4.5",
+    "db-migrate": "^0.10.0-beta.13",
+    "db-migrate-mysql": "1.1.10"
+  },
+  "dependencies": {
+    "body-parser": "1.17.2",
+    "config": "^1.26.2",
+    "cors": "2.8.4",
+    "express": "4.15.4",
+    "handlebars": "^4.0.10",
+    "handlebars-intl": "^1.1.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "mysql-promise": "3.1.0",
+    "promise-mysql": "2.0.0",
+    "require-text": "0.0.1",
+    "swagger-jsdoc": "1.9.7",
+    "swagger-ui-express": "2.0.7"
+  }
+}

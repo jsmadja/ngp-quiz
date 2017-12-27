@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=whois
+      - MYSQL_USER=whois
+      - MYSQL_PASSWORD=whois
+    ports:
+      - 3306:3306
+    networks:
+      - backend
+    volumes:
+      - ./data:/var/lib/mysql
+
+networks:
+  backend:

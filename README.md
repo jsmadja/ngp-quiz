@@ -1,1 +1,1 @@
-# ngp-quiz
+# NGP Quiz
