@@ -1,0 +1,5 @@
+language: node_js
+node_js:
+  - "6"
+
+script: cd back/nodejs && npm install && npm test && cd ../../web && npm install && npm test

@@ -1,0 +1,53 @@
+version: "2"
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=whois
+      - MYSQL_USER=whois
+      - MYSQL_PASSWORD=whois
+    ports:
+      - 3306:3306
+    networks:
+      - backend
+    volumes:
+      - /opt/whois/data:/var/lib/mysql
+
+  db_tests:
+      image: mysql:5.7
+      environment:
+        - MYSQL_ROOT_PASSWORD=admin
+        - MYSQL_DATABASE=whois
+        - MYSQL_USER=whois
+        - MYSQL_PASSWORD=whois
+      ports:
+        - 3307:3306
+      networks:
+        - backend
+
+  back:
+    build: ./back
+    image: jsmadja/whois-back
+    depends_on:
+      - db
+    ports:
+      - 8000:8000
+    networks:
+      - backend
+
+  web:
+    build: ./web
+    image: jsmadja/whois-web
+    links:
+       - back
+    depends_on:
+      - back
+    ports:
+      - 80:80
+    networks:
+      - backend
+
+networks:
+  backend:
