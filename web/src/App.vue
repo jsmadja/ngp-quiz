@@ -4,7 +4,7 @@
       <v-btn icon light @click.stop="rightDrawer = !rightDrawer">
         <v-icon>menu</v-icon>
       </v-btn>
-      NEOGEO-PLAYERS QUIZ
+      Quiz: King of Players !
     </v-toolbar>
     <v-content>
       <v-layout row wrap>

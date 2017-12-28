@@ -55,7 +55,7 @@
   export default {
     data() {
       return {
-        player: '',
+        player: localStorage.getItem('username') || '',
       };
     },
     computed: mapGetters(['getGame']),
@@ -66,6 +66,7 @@
       post() {
         const game = this.getGame;
         game.player = this.player;
+        localStorage.setItem('username', this.player);
         fetch('/api/game', {
           method: 'POST',
           mode: 'cors',

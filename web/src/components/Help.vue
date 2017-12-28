@@ -2,7 +2,7 @@
   <v-layout>
     <blockquote class="blockquote body-1">
       <p>
-        <b>Whois</b> est une application pour apprendre à connaître le nom des personnages de SNK.
+        <b>Quiz : King of Players !</b> est une application pour apprendre à connaître le nom des personnages de SNK.
       </p>
       <p>
         Plus vous jouez, plus vous devenez meilleur et grimpez dans
