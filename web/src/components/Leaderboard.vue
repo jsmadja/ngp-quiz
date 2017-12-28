@@ -4,8 +4,10 @@
     <v-flex lg10 md11 sm12 xs12>
       <v-data-table
         v-bind:headers="headers"
+        hide-actions
         :items="items"
         class="elevation-1"
+        :rows-per-page-items="[{ text: 'All', value: -1 }, 5, 15, 25]"
       >
         <template slot="items" slot-scope="props">
           <td class="text-xs-right">{{ props.item.rank | formatRank }}</td>
@@ -18,11 +20,7 @@
       </v-data-table>
     </v-flex>
     <v-flex lg10 md11 sm12 xs12>
-      <v-card>
-        <v-card-actions>
-          <v-btn flat color="blue" @click="retry()">Try Again!</v-btn>
-        </v-card-actions>
-      </v-card>
+        <v-btn dark color="purple lighten-2" @click="retry()">Try Again!</v-btn>
     </v-flex>
   </v-layout>
   </v-container>
