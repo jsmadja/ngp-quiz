@@ -11,19 +11,21 @@ const Repository = {
         Database.query(
         `
         SELECT
-  DISTINCT game.player,
+  DISTINCT
+  game.player,
   score,
   elapsed_time,
-  created_at,
+  game.created_at,
   detail
 FROM Game game INNER JOIN (
                             SELECT
                               player,
-                              max(score) AS MaxScore
+                              max(score) AS MaxScore,
+                              max(created_at) AS created_at
                             FROM Game
                             WHERE YEAR(created_at) = YEAR(current_date) AND MONTH(created_at) = MONTH(current_date)
                             GROUP BY player
-                          ) tm ON game.player = tm.player AND game.score = tm.MaxScore
+                          ) tm ON game.player = tm.player AND game.score = tm.MaxScore AND game.created_at = tm.created_at
 ORDER BY score DESC, elapsed_time ASC
         `).then(leaderboard => {
             leaderboard.forEach(l => {
