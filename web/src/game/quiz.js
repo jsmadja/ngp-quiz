@@ -65,6 +65,15 @@ const data = [
   { file: 'bfight_bking.gif', name: 'Billy King', gender: 'm' },
   { file: 'bfight_duke.gif', name: 'Duke Edwards', gender: 'm' },
   { file: 'bfight_ryu.gif', name: 'Ryu Saeba', gender: 'm' },
+  { file: 'ragnagard_susano.png', name: 'Susano', gender: 'm' },
+  { file: 'ragnagard_benten.png', name: 'Benten', gender: 'f' },
+  { file: 'ragnagard_chichi_nene.png', name: 'Chichi & Nene', gender: 'f' },
+  { file: 'ragnagard_songoku.png', name: 'Son Gokû', gender: 'm' },
+  { file: 'ragnagard_binten.png', name: 'Binten', gender: 'm' },
+  { file: 'ragnagard_suyten.png', name: 'Syuten-Dozi', gender: 'm' },
+  { file: 'ragnagard_seena.png', name: 'Seena', gender: 'f' },
+  { file: 'ragnagard_igret.png', name: 'Igret', gender: 'm' },
+
 ];
 
 // { file: '', name: '', gender: 'm' },
