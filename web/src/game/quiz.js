@@ -74,6 +74,15 @@ const data = [
   { file: 'ragnagard_seena.png', name: 'Seena', gender: 'f' },
   { file: 'ragnagard_igret.png', name: 'Igret', gender: 'm' },
 
+  { file: 'aof_jack.jpg', name: 'Jack Turner', gender: 'm' },
+  { file: 'aof_john.jpg', name: 'John Crawley', gender: 'm' },
+  { file: 'aof_lee.jpg', name: 'Lee Pai Long', gender: 'm' },
+  { file: 'aof_mickey.jpg', name: 'Mickey Rogers', gender: 'm' },
+  { file: 'aof_mrbig.jpg', name: 'Mr. Big', gender: 'm' },
+  { file: 'aof_mrkarate.png', name: 'Mr. Karate', gender: 'm' },
+  { file: 'aof_todoh.png', name: 'Ryuhaku Todoh', gender: 'm' },
+
+
 ];
 
 // { file: '', name: '', gender: 'm' },
