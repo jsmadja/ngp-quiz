@@ -1,6 +1,7 @@
 import _ from 'lodash';
 
 const data = [
+  { file: 'wh_geegus.gif', name: 'Geegus', gender: 'm' },
   { file: 'wh2_brocken.jpg', name: 'Brocken', gender: 'm' },
   { file: 'wh2_dio.jpg', name: 'Dio', gender: 'm' },
   { file: 'wh2_neogeegus.png', name: 'Neo Geegus', gender: 'm' },
