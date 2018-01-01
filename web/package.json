@@ -13,7 +13,8 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
     "docker:build": "npm run build && docker build -t jsmadja/whois-web .",
-    "docker:push": "docker push jsmadja/whois-web"
+    "docker:push": "docker push jsmadja/whois-web",
+    "deploy": "ssh jsmadja@xebia.fr 'docker-compose pull && docker-compose up -d web'"
   },
   "dependencies": {
     "lodash": "^4.17.4",
