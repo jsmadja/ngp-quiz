@@ -85,7 +85,43 @@ const data = [
   { file: 'aof_mrbig.jpg', name: 'Mr. Big', gender: 'm' },
   { file: 'aof_mrkarate.png', name: 'Mr. Karate', gender: 'm' },
   { file: 'aof_todoh.png', name: 'Ryuhaku Todoh', gender: 'm' },
+  { file: 'aof2_eiji.jpg', name: 'Eiji Kisaragi', gender: 'm' },
+  { file: 'aof2_temjin.jpg', name: 'Temjin', gender: 'm' },
 
+  { file: 'aof3_jin.jpg', name: 'Jin Fu-Ha', gender: 'm' },
+  { file: 'aof3_karman.jpg', name: 'Karman Cole', gender: 'm' },
+  { file: 'aof3_kasumi.jpg', name: 'Kasumi Todoh', gender: 'f' },
+  { file: 'aof3_lenny.jpg', name: 'Lenny Creston', gender: 'f' },
+  { file: 'aof3_rody.jpg', name: 'Rody Birts', gender: 'm' },
+  { file: 'aof3_sinclair.jpg', name: 'Sinclair', gender: 'f' },
+  { file: 'aof3_wang.jpg', name: 'Wang Koh-San', gender: 'm' },
+  { file: 'aof3_wyler.jpg', name: 'Wyler', gender: 'm' },
+
+  { file: 'kotm_astroguy.png', name: 'Astro Guy', gender: 'm' },
+  { file: 'kotm_beetlemania.png', name: 'Beetle Mania', gender: 'm' },
+  { file: 'kotm_geon.png', name: 'Geon', gender: 'm' },
+  { file: 'kotm_poisonghost.png', name: 'Poison Ghost', gender: 'm' },
+  { file: 'kotm_rocky.png', name: 'Rocky', gender: 'm' },
+  { file: 'kotm_woo.png', name: 'Woo', gender: 'm' },
+
+  { file: 'whp_gokuu.gif', name: 'Son Gokuu', gender: 'm' },
+  { file: 'whp_neodio.jpg', name: 'Neo Dio', gender: 'm' },
+
+  { file: 'sr_carol.jpg', name: 'Carol Stanzack', gender: 'f' },
+  { file: 'sr_chung.jpg', name: 'Chung Paifu', gender: 'm' },
+  { file: 'sr_eagle.jpg', name: 'Max Eagle', gender: 'm' },
+  { file: 'sr_gordon.jpg', name: 'Gordon Bowman', gender: 'm' },
+  { file: 'sr_gozu.jpg', name: 'Gozu', gender: 'm' },
+  { file: 'sr_hayate.jpg', name: 'Sho Hayate', gender: 'm' },
+  { file: 'sr_joker.jpg', name: 'Joker', gender: 'm' },
+  { file: 'sr_kingleo.jpg', name: 'King Leo', gender: 'm' },
+  { file: 'sr_kinglion.jpg', name: 'King Lion', gender: 'm' },
+  { file: 'sr_mezu.jpg', name: 'Mezu', gender: 'm' },
+  { file: 'sr_nicola.jpg', name: 'Nicola Zaza', gender: 'm' },
+
+  { file: 'ke_jyazu.jpg', name: 'Jyazu', gender: 'm' },
+  { file: 'ke_rosa.jpg', name: 'Rosa', gender: 'f' },
+  { file: 'ke_sue.jpg', name: 'Kim Sue Il', gender: 'm' },
 
 ];
 
